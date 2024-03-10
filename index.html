@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Readify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class="nav-bar">
+        <h1>READIFY</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>FIFTY SHADES OF GREY</h2>
+            <h5>E.L. James</h5>
+            <p>"Fifty Shades of Grey" by E.L. James portrays Anastasia Steele's relationship with Christian Grey, delving into his controlling nature and their sexual dynamic, captivating readers with its explicit content and exploration of power dynamics.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>IKIGAI</h2>
+            <h5>Hector García and Francesc Miralles</h5>
+            <p>"Ikigai" by Héctor García and Francesc Miralles reveals the Japanese concept of finding purpose and happiness. Through anecdotes and research, it illustrates how embracing ikigai can lead to a fulfilling life of mindfulness and self-discovery.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>IT ENDS WITH US</h2>
+            <h5>Colleen Hoover</h5>
+            <p>"It Ends with Us" by Colleen Hoover follows Lily Bloom's journey as she navigates love and past trauma, confronting difficult choices and exploring themes of resilience, forgiveness, and self-discovery.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>ADD BOOK</h2>
+        <form>
+            <input type="text" placeholder="Book-title" id="book-title-input">
+            <input type="text" placeholder="Book-author" id="book-author-input">
+            <textarea placeholder="Short-description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <div class="add-button" id="add-popup-button">+</div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Readify. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
